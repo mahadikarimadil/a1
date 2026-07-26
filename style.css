@@ -1,0 +1,480 @@
+/* =========================
+   GOOGLE FONT & RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background: #0F172A;
+    color: white;
+    line-height: 1.6;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+        BUTTON
+========================= */
+
+button{
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn{
+    background: #2563EB;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 10px;
+}
+
+.primary-btn:hover{
+    background: #1D4ED8;
+}
+
+/* =========================
+        NAVBAR
+========================= */
+
+.navbar{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.logo img{
+    width: 170px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-links a:hover{
+    color: #60A5FA;
+}
+
+.nav-btn button{
+    background: #2563EB;
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 10px;
+}
+
+.nav-btn button:hover{
+    background: #1D4ED8;
+}
+
+/* =========================
+        HERO
+========================= */
+
+.hero{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("./assets/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+
+    width: 800px;
+
+    text-align: center;
+}
+
+.hero h1{
+
+    font-size: 70px;
+
+    margin-bottom: 25px;
+
+    font-weight: 800;
+}
+
+.hero em{
+
+    color: #60A5FA;
+}
+
+.hero p{
+
+    font-size: 18px;
+
+    color: #D1D5DB;
+
+    margin-bottom: 40px;
+}
+/* =========================
+        SPEAKERS
+========================= */
+
+.speakers{
+    padding: 100px 0;
+    background: #111827;
+}
+
+.speakers h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.speaker-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+
+.speaker-card{
+    background: #1F2937;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.speaker-card:hover{
+    transform: translateY(-8px);
+}
+
+.speaker-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.speaker-info{
+    padding: 25px;
+}
+
+.speaker-info h5{
+    display: inline-block;
+    background: #2563EB;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.speaker-info h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.speaker-info p{
+    color: #D1D5DB;
+    font-size: 16px;
+}
+/* =========================
+        PRICING
+========================= */
+
+.pricing{
+    padding: 100px 0;
+    background: #0F172A;
+}
+
+.pricing h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.pricing-subtitle{
+    text-align: center;
+    color: #CBD5E1;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.pricing-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card{
+    background: #1F2937;
+    width: 340px;
+    padding: 40px 30px;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.pricing-card:hover{
+    transform: translateY(-8px);
+}
+
+.featured{
+    background: #2563EB;
+    transform: scale(1.05);
+}
+
+.featured:hover{
+    transform: scale(1.05) translateY(-8px);
+}
+
+.pricing-card h4{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.pricing-card h3{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.price-text{
+    color: #D1D5DB;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul{
+    margin-bottom: 35px;
+}
+
+.pricing-card ul li{
+    margin-bottom: 14px;
+    color: #E5E7EB;
+}
+
+.pricing-card button{
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: #111827;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.pricing-card button:hover{
+    background: #E5E7EB;
+}
+
+.featured button{
+    background: #0F172A;
+    color: white;
+}
+
+.featured button:hover{
+    background: #111827;
+}
+/* =========================
+        CONFERENCE SCHEDULE
+========================= */
+
+.schedule{
+    padding: 100px 0;
+    background: #111827;
+}
+
+.schedule h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.schedule-subtitle{
+    text-align: center;
+    color: #CBD5E1;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.schedule-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.schedule-card{
+    background: #1F2937;
+    width: 340px;
+    padding: 35px;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.schedule-card:hover{
+    transform: translateY(-8px);
+}
+
+.schedule-card h3{
+    color: #60A5FA;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.schedule-card h4{
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.schedule-card p{
+    color: #D1D5DB;
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+footer{
+    background: #0B1120;
+    padding: 60px 0 30px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-top img{
+    width: 170px;
+}
+
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #374151;
+    margin-bottom: 25px;
+}
+
+.copyright{
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 15px;
+}
+
+/* =========================
+        RESPONSIVE
+========================= */
+
+@media screen and (max-width:992px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero h1{
+        font-size: 52px;
+    }
+
+    .speaker-card-container{
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schedule-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero{
+        height: auto;
+        padding: 180px 20px 120px;
+    }
+
+    .hero h1{
+        font-size: 42px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .speakers h2,
+    .pricing h2,
+    .schedule h2{
+        font-size: 34px;
+    }
+
+    .pricing-card,
+    .schedule-card{
+        width: 100%;
+    }
+
+}
